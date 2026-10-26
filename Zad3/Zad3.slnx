@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Zad3/Zad3.vcxproj" />
+  <Project Path="Zad3/Zad3.vcxproj" Id="595e6518-05ce-4639-9311-cecf56e4d59e" />
 </Solution>

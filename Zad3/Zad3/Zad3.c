@@ -285,33 +285,58 @@ int main() {
     PrintList(p);*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	return 0;
 
 
 
 }
+
+//S laba:
+
+int insertBefore(Position head, char* LastN){
+	Position newPerson = NULL;
+	findLastName(head->next, LastN);
+	//alokacija
+	//insertAfter
+}
+
+int insertAfter(Position head, char* LastN){
+	Position newPerson = NULL;
+	findLastName(head, LastN);
+}
+
+//D-upisivanje u dat (otvori dat, fprintf, zatvori dat)
+
+//E-citanje iz dat(otvori dat,provjeri otvaranje (if fp==NULL), fscanf, insertEnd,provjeri feof, zatvori dat)
+
+//C- Bubble sort
+//provjera-je li lista prazna (head->next ==NULL)
+	Position q = head;
+	Position p = q->next;
+	Position temp = NULL;
+	
+	while(p->next !=NULL){
+		if (strcmp(p->LastN, p->next->LastN) > 0) {
+			temp = p->next;
+			q->next = temp;
+			p->next = temp->next;
+			temp->next = p;
+			q = head;
+			p = q->next;
+		}
+		else {
+			q = p;
+			p = p->next;
+		}
+	}
+	q = p;
+	p = p->next;
+
+
+
+
+
+
+
+
+*/
