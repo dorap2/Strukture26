@@ -26,3 +26,10 @@ Release/
 # Temporary files
 *.tmp
 *.bak
+
+*.ilk
+*.idb
+*.tlog
+*.log
+*.recipe
+*.dll
